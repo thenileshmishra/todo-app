@@ -14,7 +14,9 @@ function Todo({ submit }) {
     const obj = {
       text: data,
       id: uuid(),
+      time: new Date(),
     };
+
     submit(obj);
     setData("");
   };
