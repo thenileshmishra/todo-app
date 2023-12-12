@@ -1,10 +1,10 @@
 import Todo from "./components/Todo";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import List from "./components/List";
 
 function App() {
-  const [todo, setTodo] = React.useState([]);
+  const [todo, setTodo] = useState([]);
 
   const handleAdd = (item) => {
     setTodo((prev) => [item, ...prev]);
@@ -15,10 +15,6 @@ function App() {
     let temp = todo.filter((obj) => obj.id !== id);
     setTodo(temp);
   };
-
-  useEffect(() => {
-    console.log("Rohit");
-  });
 
   return (
     <div>

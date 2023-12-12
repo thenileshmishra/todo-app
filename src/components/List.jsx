@@ -2,6 +2,7 @@ import React from "react";
 import { DeleteOutlined } from "@ant-design/icons";
 
 function List({ data, handleDelete }) {
+  
   return (
     <div
       style={{
